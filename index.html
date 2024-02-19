@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="/src/css/styles.css">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <header>
+      <div class="header__day">
+        <p>Day</p>
+        <input type="number" class="input__day" id="day" min="1" max="31" value="00">
+      </div>
+      <div class="header__month">
+        <p>Month</p>
+        <input type="number" class="input__month" id="month" min="1" max="12" value="00">
+      </div>
+      <div class="header__year">
+        <p>Year</p>
+        <input type="number" class="input__year" id="year" value="0000">
+      </div>
+    </header>
+      <img src="/assets/images/icon-arrow.svg" alt="icono" id="boton_enviar">
+    <main>
+      <div class="body body_year">
+        <div class="body_year_response">
+          <p id="body_year_response" class="body_response">--</p>
+        </div>
+          <p class="body_text">
+            years
+          </p>
+      </div>
+      <div class="body body_month">
+        <div class="body_month_response">
+          <p id="body_month_response" class="body_response">--</p>
+        </div>
+        <p class="body_text">
+            months
+        </p>
+      </div>
+      <div class="body body_day">
+        <div class="body_day_response">
+          <p id="body_day_response" class="body_response">--</p>
+        </div>
+        <p class="body_text">
+            days
+        </p>
+      </div>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/src/js/script.js"></script>
+</body>
+</html>
